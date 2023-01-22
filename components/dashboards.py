@@ -19,20 +19,20 @@ layout = dbc.Col([
                 dbc.Card([
                     dcc.Graph(id='graph1')
                 ], style={'margin-top': '15px', 'margin-left': '10px'}),
-        ]),
-    ]), 
-       dbc.Row([
+        ], width=6),
+        dbc.Col([ 
+            dbc.Card([ 
+                dcc.Graph(id='graph2')
+            ], style={'margin-top':'10px'})
+        ], width=6)
+        ]), 
+        dbc.Row([
             dbc.Col([
                 dbc.Card([
-                    dcc.Graph(id='graph2')
+                    dcc.Graph(id='graph3')
                     ], style={'color':'white', 'background-color':'#181D3135'})
                 ], style={'margin-top': '10px', 'margin-left':'10px'})
         ]),
-        dbc.Col([
-            dbc.Card([
-                dcc.Graph(id='graph3')
-            ], style={'margin-top': '10px'})
-        ])
     ]),
 
 # =========  Callbacks  =========== #

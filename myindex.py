@@ -8,7 +8,7 @@ from components import sidebar, dashboards
 from app import *
 
 # =========  Layout  =========== #
-app.layout = dbc.Container(children=[
+app.layout = dbc.Container([
     dbc.Row([
         dbc.Col([
             dcc.Location(id="url"),
