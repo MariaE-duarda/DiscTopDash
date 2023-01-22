@@ -32,7 +32,7 @@ app.layout = dbc.Container([
         dbc.Col([ 
             dbc.Col([
         dbc.Card([
-                html.H1('100 Animes', style={'color':'#678983'}),
+                html.H1('100 Animações', style={'color':'#678983'}),
                 html.P('Trabalho final', style={'color':'white', 'letter-spacing':'2px', 'font-weight':'400', 'font-size':'20px'}),
                 html.Hr(),
 
@@ -69,7 +69,7 @@ app.layout = dbc.Container([
                 html.Button('Site usado',className='button-git', id="open5", n_clicks=0),
                 dbc.Modal([
                         dbc.ModalHeader(dbc.ModalTitle("Link do site usado:", style={'font-weight':'bold'})),
-                        dbc.ModalBody("https://m.imdb.com/feature/genre/?ref_=nv_ch_gr", style={'font-size':'20px'}),
+                        dbc.ModalBody("https://www.imdb.com/list/ls057577566/", style={'font-size':'20px'}),
                         dbc.ModalFooter(
                         dbc.Button(
                                 "Fechar", id="close5", className="ms-auto", n_clicks=0, style={'color':'white', 'border-radius':'10px', 'background-color':'transparent', 'border': '1px solid #678983'}
@@ -148,7 +148,8 @@ app.layout = dbc.Container([
                 ], style={'margin-top': '10px', 'margin-left':'10px'}, width=8),
                 dbc.Col([ 
                     dbc.Card([ 
-                        dcc.Graph(id='graph3')
+                        html.H1('Site usado:'),
+                        html.Img(src='./assets/img-site.png'),
                     ], style={'margin-top':'50px', 'margin-left':'20px'})
                 ], width=3)
             ]),
